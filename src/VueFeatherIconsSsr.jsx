@@ -1,6 +1,6 @@
 import feather from 'feather-icons'
 export default {
-  name: 'VueFeatherIconsJsx',
+  name: 'VueFeatherIconsSsrJsx',
   render (h) {
     return h('svg',
       {

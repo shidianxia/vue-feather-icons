@@ -1,11 +1,11 @@
-import VueFeatherIcons from 'src/VueFeatherIcons.vue'
+import VueFeatherIconsSsr from 'src/VueFeatherIconsSsr.vue'
 import { createVM } from '../helpers/utils.js'
 
-describe('VueFeatherIcons.vue', function () {
+describe('VueFeatherIconsSsr.vue', function () {
   it('should render correct contents', function () {
     const vm = createVM(this, `
-<VueFeatherIcons name="circle"></VueFeatherIcons>
-`, { components: { VueFeatherIcons }})
+<VueFeatherIconsSsr name="circle"></VueFeatherIconsSsr>
+`, { components: { VueFeatherIconsSsr }})
     /*global SVGElement*/
     vm.$el.querySelector('.feather').should.instanceof(SVGElement)
   })

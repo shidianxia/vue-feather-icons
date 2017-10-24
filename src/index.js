@@ -1,9 +1,9 @@
-import VueFeatherIcons from './VueFeatherIcons.vue'
-import VueFeatherIconsJsx from './VueFeatherIcons.jsx'
+import VueFeatherIconsSsr from './VueFeatherIconsSsr.vue'
+import VueFeatherIconsSsrJsx from './VueFeatherIconsSsr.jsx'
 
 function plugin (Vue) {
-  Vue.component('VueFeatherIcons', VueFeatherIcons)
-  Vue.component('VueFeatherIconsJsx', VueFeatherIconsJsx)
+  Vue.component('VueFeatherIconsSsr', VueFeatherIconsSsr)
+  Vue.component('VueFeatherIconsSsrJsx', VueFeatherIconsSsrJsx)
 }
 
 // Install by default if using the script tag
@@ -15,7 +15,7 @@ export default plugin
 const version = '__VERSION__'
 // Export all components too
 export {
-  VueFeatherIcons,
-  VueFeatherIconsJsx,
+  VueFeatherIconsSsr,
+  VueFeatherIconsSsrJsx,
   version
 }

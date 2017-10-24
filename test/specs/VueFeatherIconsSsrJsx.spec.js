@@ -1,11 +1,11 @@
-import VueFeatherIconsJsx from 'src/VueFeatherIcons.jsx'
+import VueFeatherIconsSsrJsx from 'src/VueFeatherIconsSsr.jsx'
 import { createVM } from '../helpers/utils.js'
 
-describe('VueFeatherIcons.jsx', function () {
+describe('VueFeatherIconsSsr.jsx', function () {
   it('should render correct contents', function () {
     const vm = createVM(this, `
-<VueFeatherIconsJsx name="anchor"></VueFeatherIconsJsx>
-`, { components: { VueFeatherIconsJsx }})
+<VueFeatherIconsSsrJsx name="anchor"></VueFeatherIconsSsrJsx>
+`, { components: { VueFeatherIconsSsrJsx }})
     /*global SVGElement*/
     vm.$el.querySelector('.feather').should.instanceof(SVGElement)
   })
@@ -14,8 +14,8 @@ describe('VueFeatherIcons.jsx', function () {
     // You can write your tests in JSX but make sure to use the lower case
     // version of your component because otherw
     const vm = createVM(this, h => (
-      <vue-feather-icons-jsx name='anchor'></vue-feather-icons-jsx>
-    ), { components: { VueFeatherIconsJsx }})
+      <vue-feather-icons-ssr-jsx name='anchor'></vue-feather-icons-ssr-jsx>
+    ), { components: { VueFeatherIconsSsrJsx }})
     vm.$nextTick(() => {
       vm.$el.querySelector('.feather').should.instanceof(SVGElement)
     })
