@@ -1,13 +1,13 @@
 # Vue Feather Icons
 
-[![npm](https://img.shields.io/npm/v/vue-feather-icons.svg)](https://www.npmjs.com/package/vue-feather-icons) [![vue2](https://img.shields.io/badge/vue-2.x-brightgreen.svg)](https://vuejs.org/)
+[![npm](https://img.shields.io/npm/v/vue-feather-icons-ssr.svg)](https://www.npmjs.com/package/vue-feather-icons-ssr) [![vue2](https://img.shields.io/badge/vue-2.x-brightgreen.svg)](https://vuejs.org/)
 
-> Feather icons plugin for Vue.js
+> Feather icons plugin for Vue.js, SSR supported.
 
 ## Installation
 
 ```bash
-npm install --save vue-feather-icons
+npm install --save vue-feather-icons-ssr
 ```
 
 ## Usage
@@ -16,9 +16,9 @@ npm install --save vue-feather-icons
 
 ```js
 import Vue from 'vue'
-import VueFeatherIcons from 'vue-feather-icons'
+import icon from 'vue-feather-icons-ssr'
 
-Vue.use(VueFeatherIcons)
+Vue.use(icon)
 ```
 
 ### Browser
@@ -26,10 +26,10 @@ Vue.use(VueFeatherIcons)
 ```html
 <!-- Include after Vue -->
 <!-- Local files -->
-<script src="vue-feather-icons/dist/vue-feather-icons.js"></script>
+<script src="vue-feather-icons-ssr/dist/vue-feather-icons-ssr.js"></script>
 
 <!-- From CDN -->
-<script src="https://unpkg.com/vue-feather-icons"></script>
+<script src="https://unpkg.com/vue-feather-icons-ssr"></script>
 ```
 
 ## Development
