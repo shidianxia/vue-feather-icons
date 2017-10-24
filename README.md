@@ -4,6 +4,10 @@
 
 > Feather icons plugin for Vue.js, SSR supported.
 
+## Demo
+
+[Jsfiddle](https://jsfiddle.net/7vjv08km/1/)
+
 ## Installation
 
 ```bash
