@@ -1,4 +1,4 @@
-# VueFeatherIcons
+# Vue Feather Icons
 
 [![npm](https://img.shields.io/npm/v/vue-feather-icons.svg)](https://www.npmjs.com/package/vue-feather-icons) [![vue2](https://img.shields.io/badge/vue-2.x-brightgreen.svg)](https://vuejs.org/)
 
@@ -17,8 +17,6 @@ npm install --save vue-feather-icons
 ```js
 import Vue from 'vue'
 import VueFeatherIcons from 'vue-feather-icons'
-// You need a specific loader for CSS files like https://github.com/webpack/css-loader
-import 'vue-feather-icons/dist/vue-feather-icons.css'
 
 Vue.use(VueFeatherIcons)
 ```
@@ -28,11 +26,9 @@ Vue.use(VueFeatherIcons)
 ```html
 <!-- Include after Vue -->
 <!-- Local files -->
-<link rel="stylesheet" href="vue-feather-icons/dist/vue-feather-icons.css"></link>
 <script src="vue-feather-icons/dist/vue-feather-icons.js"></script>
 
 <!-- From CDN -->
-<link rel="stylesheet" href="https://unpkg.com/vue-feather-icons/dist/vue-feather-icons.css"></link>
 <script src="https://unpkg.com/vue-feather-icons"></script>
 ```
 
