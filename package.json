@@ -1,6 +1,6 @@
 {
   "name": "vue-feather-icons-ssr",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Feather icons plugin for Vue.js, SSR supported.",
   "author": "Dianxia Shi <shidianxia@gmail.com>",
   "main": "dist/vue-feather-icons-ssr.common.js",
