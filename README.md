@@ -20,9 +20,21 @@ npm install --save vue-feather-icons-ssr
 
 ```js
 import Vue from 'vue'
-import icon from 'vue-feather-icons-ssr'
+//for convenience, import as alias
+import {VueFeatherIconsSsr as icon} from 'vue-feather-icons-ssr'
+//use the code below to support SSR
+//import {VueFeatherIconsSsrJsx as icon} from 'vue-feather-icons-ssr'
 
-Vue.use(icon)
+//register it globally
+Vue.component('icon', icon)
+```
+
+```html
+<!-- name option index: https://feathericons.com
+pass the name of feather icon to display the icon you want -->
+<icon name="github"></icon>
+<!-- you can also pass any SVG compatible attributes to the component -->
+<icon name="github" stoke-width="1"></icon>
 ```
 
 ### Browser
@@ -59,20 +71,9 @@ npm run build
 ```
 
 
-## Publishing
+## Thanks to
 
-The `prepublish` hook will ensure dist files are created before publishing. This
-way you don't need to commit them in your repository.
-
-```bash
-# Bump the version first
-# It'll also commit it and create a tag
-npm version
-# Push the bumped package and tags
-git push --follow-tags
-# Ship it 🚀
-npm publish
-```
+[Feather Icons](https://feathericons.com)
 
 ## License
 
