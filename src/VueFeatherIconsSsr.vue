@@ -3,7 +3,7 @@
     xmlns="http://www.w3.org/2000/svg"
     :width="size"
     :height="size"
-    :viewBox="`0 0 ${size} ${size}`"
+    :viewBox="`0 0 ${defaultSize} ${defaultSize}`"
     fill="none"
     stroke="currentColor"
     :stroke-width="strokeWidth"
@@ -18,6 +18,7 @@ import feather from 'feather-icons'
 export default {
   data () {
     return {
+      defaultSize: 24,
       path: feather.icons[this.name]
     }
   },
